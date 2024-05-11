@@ -7,7 +7,7 @@ const theme: ThemeConfig = {
   token: {
     colorBgLayout: "#f4f4f4",
     colorBgContainer: "#fff",
-    colorPrimary: "rgb(7, 61, 55)",
+    colorPrimary: "#3E7972",
   }
 }
 
