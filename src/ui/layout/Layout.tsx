@@ -10,12 +10,12 @@ interface LayoutProps extends PropsWithChildren {
 
 export const Layout: FC<LayoutProps> = ({ children, title }) => {
   const {
-    token: { colorBgContainer, colorBgLayout, colorPrimary }
+    token: { colorBgContainer, colorBgLayout, colorPrimary, boxShadow: boxShadow }
   } = theme.useToken()
 
   return (
     <Flex vertical gap="middle" style={{ height: "100vh", backgroundColor: colorBgLayout }}>
-      <Row style={{ backgroundColor: colorBgContainer, height: "60px" }}>
+      <Row style={{ boxShadow, backgroundColor: colorBgContainer, height: "60px" }}>
         <Col span={20} offset={2} style={{ display: "flex", alignItems: "center" }}>
           <Title level={1} style={{ color: colorPrimary, margin: 0, fontSize: 30 }}>{title}</Title>
         </Col>
