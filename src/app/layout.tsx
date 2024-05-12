@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { FC, PropsWithChildren } from "react"
 
+import { TRPCProvider } from "@/server/TRPCProvider"
 import { AntdContainer } from "@/ui/AntdContainer"
 import { Layout } from "@/ui/layout"
 
@@ -18,15 +19,16 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
     <body className={inter.className} style={{ margin: 0 }}>
-      <AntdContainer>
-        <Layout title={title}>
-          {children}
-        </Layout>
-      </AntdContainer>
+      <TRPCProvider>
+        <AntdContainer>
+          <Layout title={title}>
+            {children}
+          </Layout>
+        </AntdContainer>
+      </TRPCProvider>
     </body>
     </html>
   )
 }
 
 export default RootLayout
-
