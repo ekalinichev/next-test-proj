@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { FC, PropsWithChildren } from "react"
 
-import { TRPCProvider } from "@/server/TRPCProvider"
-import { AntdContainer } from "@/ui/AntdContainer"
 import { Layout } from "@/ui/layout"
+import { AntdContainer } from "@/utils/AntdContainer"
+import { TRPCProvider } from "@/utils/TRPCProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 

@@ -8,10 +8,11 @@ import { FilterButton } from "@/app/components/FilterButton"
 import { NotesButton } from "@/app/components/NotesButton"
 import { PageTitle } from "@/ui/page/PageTitle"
 
-const Home: FC = () => {
+const Home: FC = async () => {
+
   return (
     <>
-      <PageTitle title={"Page title"}>
+      <PageTitle title="Page title">
         <ExportButton />
         <NotesButton count={3} />
         <FilterButton count={302} />

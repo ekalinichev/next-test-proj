@@ -1,12 +1,10 @@
 "use client"
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import { createTRPCReact, httpBatchLink } from "@trpc/react-query"
+import { httpBatchLink } from "@trpc/react-query"
 import { FC, PropsWithChildren, useMemo } from "react"
 
-import type { AppRouter } from "@/server/routers/_app"
-
-const trpc = createTRPCReact<AppRouter>()
+import { trpc } from "@/utils/trpc"
 
 export const TRPCProvider: FC<PropsWithChildren> = ({ children }) => {
   const queryClient = useMemo(() => new QueryClient(), [])
