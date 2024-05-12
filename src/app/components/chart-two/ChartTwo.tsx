@@ -1,8 +1,8 @@
 import { FC } from "react"
 
-import { CommentButton } from "@/ui/features/CommentButton"
-import { RandomAvatar } from "@/ui/features/RandomAvatar"
-import { PageCard } from "@/ui/page/PageCard"
+import { CommentButton } from "@/components/features/CommentButton"
+import { RandomAvatar } from "@/components/features/RandomAvatar"
+import { PageCard } from "@/components/page/PageCard"
 
 export const ChartTwo: FC = () => {
   return (

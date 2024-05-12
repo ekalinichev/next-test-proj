@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { SessionProvider } from "next-auth/react"
 import { FC, PropsWithChildren } from "react"
 
-import { Layout } from "@/ui/layout"
+import { Layout } from "@/components/layout"
 import { AntdContainer } from "@/utils/AntdContainer"
 import { TRPCProvider } from "@/utils/TRPCProvider"
 
@@ -19,13 +20,15 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
     <body className={inter.className} style={{ margin: 0 }}>
-      <TRPCProvider>
-        <AntdContainer>
-          <Layout title={title}>
-            {children}
-          </Layout>
-        </AntdContainer>
-      </TRPCProvider>
+      <SessionProvider>
+        <TRPCProvider>
+          <AntdContainer>
+            <Layout title={title}>
+              {children}
+            </Layout>
+          </AntdContainer>
+        </TRPCProvider>
+      </SessionProvider>
     </body>
     </html>
   )

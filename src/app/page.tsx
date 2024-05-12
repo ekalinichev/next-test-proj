@@ -6,7 +6,7 @@ import { ChartTwo } from "@/app/components/chart-two/ChartTwo"
 import { ExportButton } from "@/app/components/ExportButton"
 import { FilterButton } from "@/app/components/FilterButton"
 import { NotesButton } from "@/app/components/NotesButton"
-import { PageTitle } from "@/ui/page/PageTitle"
+import { PageTitle } from "@/components/page/PageTitle"
 
 const Home: FC = async () => {
 
