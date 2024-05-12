@@ -1,4 +1,4 @@
-[Deployed to Vercel](https://next-test-proj-pm5zavrq0-egor-kalinichevs-projects.vercel.app/)
+[Deployed to Vercel](https://next-test-proj-two.vercel.app/)
 
 ### Note on TRPC usage
 
