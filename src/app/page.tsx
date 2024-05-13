@@ -1,8 +1,8 @@
 import { Col, Row } from "antd"
 import { FC } from "react"
 
-import { ChartOne } from "@/app/components/chart-one/ChartOne"
-import { ChartTwo } from "@/app/components/chart-two/ChartTwo"
+import { DeathsPieChart } from "@/app/components/cards/DeathsPieChart"
+import { DeathsBarChart } from "@/app/components/cards/DeathsBarChart"
 import { ExportButton } from "@/app/components/ExportButton"
 import { FilterButton } from "@/app/components/FilterButton"
 import { NotesButton } from "@/app/components/NotesButton"
@@ -19,10 +19,10 @@ const Home: FC = async () => {
       </PageTitle>
       <Row gutter={20}>
         <Col span={12}>
-          <ChartOne />
+          <DeathsPieChart />
         </Col>
         <Col span={12}>
-          <ChartTwo />
+          <DeathsBarChart />
         </Col>
       </Row>
     </>
