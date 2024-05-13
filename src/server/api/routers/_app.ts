@@ -1,9 +1,12 @@
 import { z } from "zod"
 
-import { procedure, router } from "../trpc"
+import { likeRouter } from "@/server/api/routers/like"
+
+import { publicProcedure, router } from "../../trpc"
 
 export const appRouter = router({
-  hello: procedure.input(
+  like: likeRouter,
+  hello: publicProcedure.input(
     z.object({
       name: z.string()
     })
