@@ -1,8 +1,8 @@
 import { Col, Row } from "antd"
 import { FC } from "react"
 
-import { DeathsPieChart } from "@/app/components/cards/DeathsPieChart"
 import { DeathsBarChart } from "@/app/components/cards/DeathsBarChart"
+import { DeathsPieChart } from "@/app/components/cards/DeathsPieChart"
 import { ExportButton } from "@/app/components/ExportButton"
 import { FilterButton } from "@/app/components/FilterButton"
 import { NotesButton } from "@/app/components/NotesButton"
